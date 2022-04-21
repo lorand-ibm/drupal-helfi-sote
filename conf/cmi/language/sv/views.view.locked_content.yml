@@ -1,3 +1,4 @@
+label: 'Locked content'
 display:
   default:
     display_title: Master
@@ -21,38 +22,37 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        tpr_service_bulk_form:
-          label: Massuppdatera
+        node_bulk_form:
           action_title: Åtgärd
-        id:
-          label: ID
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: 'Content type'
           separator: ', '
         name:
-          label: Namn
-          separator: ', '
-        langcode:
-          label: Språk
-          separator: ', '
-        content_translation_status:
-          label: Status
-          settings:
-            format_custom_true: Publicerad
-            format_custom_false: 'Ej publicerad'
-          separator: ', '
-        content_translation_changed:
-          label: Uppdaterad
+          label: 'Lock owner'
           separator: ', '
         operations:
           label: Funktioner
       filters:
-        combine:
+        status:
           expose:
-            label: Sök
-        langcode:
+            label: 'Published status'
+          group_info:
+            label: 'Published status'
+            group_items:
+              1:
+                title: Publicerad
+        type:
           expose:
-            label: Språk
-      header:
-        result:
-          content: 'Visar @start - @end av @total'
+            label: 'Content type'
+        title:
+          expose:
+            label: Title
+      title: 'Locked content'
   page_1:
     display_title: Sida
+    display_options:
+      menu:
+        title: 'Locked content'

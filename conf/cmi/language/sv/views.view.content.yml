@@ -6,9 +6,9 @@ display:
           label: Språk
           separator: ', '
         title:
-          label: Titel
+          label: Title
         type:
-          label: Innehållstyp
+          label: 'Content type'
           separator: ', '
         name:
           label: Författare
@@ -42,15 +42,15 @@ display:
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
-            label: Innehållstyp
+            label: 'Content type'
         status:
           expose:
             label: Status
           group_info:
-            label: 'Status för publicering'
+            label: 'Published status'
             group_items:
               1:
                 title: Publicerad
